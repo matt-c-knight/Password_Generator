@@ -1,0 +1,46 @@
+var specialCharacters = "!@#$%^&*";
+var numericCharacters = "123456789";
+var lowerCaseCharacters = "qwertyuiopasdfghjklzxcvbnm";
+var upperCaseCharacters = "MNBVCXZLKJHGFDSAPOIUYTREWQ";
+var userLength = parseInt(prompt("Between 8-128, how long would you like you password?"));
+var password = "";
+var userAnswer = "";
+// var userSpecial = prompt("Would you like to use special characters?");
+// var userNumerical = prompt("Would you like to use numbers?");
+// var userLowerCase =  prompt("Would you like to use lower case letters?");
+// var userUpperCase = prompt("Would you like to use upper case letters?");
+// var passDisplay = document.querySelector('p');
+
+var userSpecial = prompt("Would you like to use special characters?");
+if (userSpecial === "yes") {
+    userAnswer += userAnswer + specialCharacters;
+} 
+var userNumerical = prompt("Would you like to use numbers?");
+ if (userNumerical === "yes") {
+    userAnswer += userAnswer + numericCharacters;
+} 
+var userLowerCase =  prompt("Would you like to use lower case letters?");
+ if (userLowerCase === "yes")   {
+    userAnswer += userAnswer + lowerCaseCharacters;
+}
+var userUpperCase = prompt("Would you like to use upper case letters?");
+ if (userUpperCase === "yes") {
+    userAnswer += userAnswer + upperCaseCharacters;
+}
+
+
+
+function passwordGenerator () {
+    for (i = 1; i <= userLength; i ++) {
+        password = password + userAnswer.charAt(Math.floor(Math.random() * userAnswer.length) +1)
+    }
+    console.log(password)
+    // passDisplay.textContent = password;
+    var passDisplay = document.querySelector('p');
+    // if (password >= 90) {
+    //     passDisplay.setAttribute("style", "font-size: 2px;");
+        
+    // }
+    passDisplay.textContent = password;
+}
+passwordGenerator();

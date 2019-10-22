@@ -1,0 +1,44 @@
+.title {
+    margin: auto;
+    padding-bottom: 10px;
+}
+.center {
+    margin: auto;
+}
+
+.main-content {
+    background-color: white;
+    /* border-style: dotted; */
+    /* border: 2px dotted gray; */
+    width: 300px;
+    margin-left: 15px;
+    /* margin-left: 30px; */
+    
+}
+
+.box {
+    margin: auto;
+}
+
+p {
+    color: gray;
+    text-align: center;
+    padding: 50px;
+    border: 2px dotted gray;
+    font-size: 8px;
+    
+}
+
+.container {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+/* .jumbotron {
+    margin-left: 0;
+} */
+
+button {
+   
+    margin: 5px;
+}
