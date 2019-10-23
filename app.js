@@ -39,18 +39,14 @@ function passwordGenerator () {
         password = password + userAnswer.charAt(Math.floor(Math.random() * userAnswer.length) +1)
     }
     console.log(password)
-    // passDisplay.textContent = password;
+   
     var passDisplay = document.querySelector('p');
-    // if (password >= 90) {
-    //     passDisplay.setAttribute("style", "font-size: 2px;");
-        
-    // }
+   
     passDisplay.textContent = password;
 }
 document.querySelector("button").addEventListener('click',function ()
     {
      passwordGenerator();
-     //validation code to see State field is mandatory.  
+      
     }  ); 
 
-// passwordGenerator();
