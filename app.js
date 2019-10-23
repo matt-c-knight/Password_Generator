@@ -36,7 +36,7 @@ if (userUpperCase === "yes") {
 
 function passwordGenerator () {
     for (i = 1; i <= userLength; i ++) {
-        password = password + userAnswer.charAt(Math.floor(Math.random() * userAnswer.length) +1)
+        password = password + userAnswer.charAt(Math.floor(Math.random() * userAnswer.length));
     }
     console.log(password)
    
