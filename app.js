@@ -12,19 +12,23 @@ var userAnswer = "";
 // var passDisplay = document.querySelector('p');
 
 var userSpecial = prompt("Would you like to use special characters?");
+userSpecial = userSpecial.toLowerCase();
 if (userSpecial === "yes") {
     userAnswer += userAnswer + specialCharacters;
 } 
 var userNumerical = prompt("Would you like to use numbers?");
- if (userNumerical === "yes") {
+userNumerical = userNumerical.toLowerCase();
+if (userNumerical === "yes") {
     userAnswer += userAnswer + numericCharacters;
 } 
 var userLowerCase =  prompt("Would you like to use lower case letters?");
- if (userLowerCase === "yes")   {
+userLowerCase = userLowerCase.toLowerCase();
+if (userLowerCase === "yes")   {
     userAnswer += userAnswer + lowerCaseCharacters;
 }
 var userUpperCase = prompt("Would you like to use upper case letters?");
- if (userUpperCase === "yes") {
+userUpperCase = userUpperCase.toLowerCase(); 
+if (userUpperCase === "yes") {
     userAnswer += userAnswer + upperCaseCharacters;
 }
 
@@ -43,4 +47,10 @@ function passwordGenerator () {
     // }
     passDisplay.textContent = password;
 }
-passwordGenerator();
+document.querySelector("button").addEventListener('click',function ()
+    {
+     passwordGenerator();
+     //validation code to see State field is mandatory.  
+    }  ); 
+
+// passwordGenerator();

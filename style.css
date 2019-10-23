@@ -1,44 +1,57 @@
-.title {
+.container {
+    background-color: lightgray;
+    width: 80%;
     margin: auto;
-    padding-bottom: 10px;
+    height: 400px;
 }
-.center {
-    margin: auto;
+
+h2 {
+    text-align: center;
 }
 
 .main-content {
-    background-color: white;
-    /* border-style: dotted; */
-    /* border: 2px dotted gray; */
-    width: 300px;
-    margin-left: 15px;
-    /* margin-left: 30px; */
-    
+    background-color: #fff;
+    border: 2px lightgray;
+    /* height: 200px; */
+    margin: 5px;
 }
 
-.box {
-    margin: auto;
+hr {
+    margin: 5px;
+    color: lightgray;
+    margin-bottom: 10px;
+}
+
+.password-box {
+    border: 1px dotted grey;
+    margin-bottom: 10px;
+    clear: both;
 }
 
 p {
-    color: gray;
     text-align: center;
-    padding: 50px;
-    border: 2px dotted gray;
     font-size: 8px;
+    word-break: break-all
+}
+
+.red-button {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: 6px;
+    margin-right: 125px;
     
 }
 
-.container {
-    margin-right: 5px;
-    margin-left: 0;
-}
+.grey-button {
+   background-color: lightgray;
+   color: white;
+   padding: 5px 8px 5px 8px;
+   margin-top: 5px;
+   position: absolute;
+   font-size: 6px;
+   float: right;
+   margin-right: 5px;
 
-/* .jumbotron {
-    margin-left: 0;
-} */
-
-button {
-   
-    margin: 5px;
 }
